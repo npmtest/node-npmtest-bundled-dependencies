@@ -1,1 +1,39 @@
-{     "devDependencies": {         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-bundled-dependencies",     "homepage": "https://github.com/npmtest/node-npmtest-bundled-dependencies",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-bundled-dependencies.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### basic test coverage for  [bundled-dependencies (v2.1.0)](https://github.com/simonmcmanus/bundledDependencies)  [![npm package](https://img.shields.io/npm/v/npmtest-bundled-dependencies.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-bundled-dependencies) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-bundled-dependencies.svg)](https://travis-ci.org/npmtest/node-npmtest-bundled-dependencies)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-bundled-dependencies",
+    "keywords": [
+        "coverage",
+        "test",
+        "bundled-dependencies"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_bundled_dependencies.js",
+    "name": "npmtest-bundled-dependencies",
+    "nameAlias": "npmtest_bundled_dependencies",
+    "nameOriginal": "npmtest-bundled-dependencies",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-bundled-dependencies.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
