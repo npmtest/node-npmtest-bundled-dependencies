@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-bundled-dependencies/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-bundled-dependencies/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-bundled-dependencies/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-bundled-dependencies/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-bundled-dependencies/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-bundled-dependencies/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-bundled-dependencies/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-bundled-dependencies/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-bundled-dependencies/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-bundled-dependencies/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-bundled-dependencies/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-bundled-dependencies/build/coverage.html/index.html)
 
@@ -35,26 +35,43 @@
 ```json
 
 {
-    "name": "bundled-dependencies",
-    "version": "2.1.0",
-    "description": "Generate your bundledDependencies from the values in the dependencies field.",
-    "main": "index.js",
+    "author": {
+        "name": "Simon McManus"
+    },
     "bin": {
         "bundled-dependencies": "./cmd.js"
     },
+    "bugs": {
+        "url": "https://github.com/simonmcmanus/bundledDependencies/issues"
+    },
+    "dependencies": {},
+    "description": "Generate your bundledDependencies from the values in the dependencies field.",
+    "devDependencies": {},
+    "directories": {},
+    "dist": {
+        "shasum": "3ef2e45554ded36d69c85b3d4bce9f0a40756c2b",
+        "tarball": "https://registry.npmjs.org/bundled-dependencies/-/bundled-dependencies-2.1.0.tgz"
+    },
+    "gitHead": "01a7c759f32bc7d836cc1861d51bc707cde48b32",
+    "homepage": "https://github.com/simonmcmanus/bundledDependencies",
+    "keywords": [
+        "npm"
+    ],
+    "license": "ISC",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "simonmcmanus"
+        }
+    ],
+    "name": "bundled-dependencies",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
         "url": "github.com/simonmcmanus/bundledDependencies"
     },
-    "keywords": [
-        "npm"
-    ],
-    "author": "Simon McManus",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/simonmcmanus/bundledDependencies/issues"
-    },
-    "homepage": "https://github.com/simonmcmanus/bundledDependencies"
+    "scripts": {},
+    "version": "2.1.0"
 }
 ```
 
